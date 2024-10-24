@@ -41,17 +41,8 @@ struct ScoresCardView: View {
                 
                 Text("Scheduled @ 10:00 AM")
             }
-            
-            
-               
-               
-            
-            
-            
         }
         .frame(height: 250)
-       
-       
     }
 }
 

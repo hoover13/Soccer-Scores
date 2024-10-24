@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StandingsView: View {
+
     var body: some View {
         
         VStack {
@@ -20,8 +21,15 @@ struct StandingsView: View {
                     .resizable()
                     .frame(width: 50, height: 50)
             }
-            .padding()
+            .padding(.horizontal)
             
+            ScrollView {
+                VStack {
+                    ForEach(1..<21) { index in
+                        StandingRow(position: index)
+                    }
+                }
+            }
             
             
         }
