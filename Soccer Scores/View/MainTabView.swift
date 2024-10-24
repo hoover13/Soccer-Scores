@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    let dataService = DataService()
     var body: some View {
         
         TabView {
@@ -22,6 +24,11 @@ struct MainTabView: View {
             
             Tab("Settings", systemImage: "gearshape") {
                 SettingsView()
+            }
+        }
+        .onAppear {
+            Task {
+                await dataService.callAPI()
             }
         }
     }

@@ -20,20 +20,20 @@ struct ScoresCardView: View {
                 HStack {
                     Spacer()
                     VStack {
-                       Image("Manchester United")
+                       Image("Arsenal FC")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        Text("UTD")
+                        Text("ARS")
                         Text("-")
                     }
                     Spacer()
                     Text("VS")
                     Spacer()
                     VStack {
-                        Image("Manchester United")
+                        Image("Newcastle United")
                              .resizable()
                              .frame(width: 50, height: 50)
-                        Text("UTD")
+                        Text("NWC")
                         Text("-")
                     }
                     Spacer()
